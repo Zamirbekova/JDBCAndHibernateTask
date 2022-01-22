@@ -2,11 +2,12 @@ package peaksoft.dao;
 
 import peaksoft.model.User;
 
+import java.sql.SQLException;
 import java.util.List;
 
 public interface UserDao {
 
-    void createUsersTable();
+    void createUsersTable() throws SQLException;
 
     void dropUsersTable();
 
@@ -17,4 +18,5 @@ public interface UserDao {
     List<User> getAllUsers();
 
     void cleanUsersTable();
+
 }

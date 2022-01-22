@@ -2,11 +2,12 @@ package peaksoft.service;
 
 import peaksoft.model.User;
 
+import java.sql.SQLException;
 import java.util.List;
 
 public interface UserService {
 
-    void createUsersTable();
+    void createUsersTable() throws SQLException;
 
     void dropUsersTable();
 
@@ -18,4 +19,3 @@ public interface UserService {
 
     void cleanUsersTable();
 }
-
