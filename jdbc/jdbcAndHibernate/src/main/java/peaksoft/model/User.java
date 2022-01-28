@@ -1,19 +1,21 @@
 package peaksoft.model;
-
+import javax.persistence.Entity;
+import javax.persistence.Table;
 import javax.persistence.*;
-
-@Table
+@Entity
+@Table(name = "userdao")
 public class User {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column
+
     private String name;
 
-    @Column
+
     private String lastName;
 
-    @Column
+
     private Byte age;
 
     public User() {
@@ -25,8 +27,7 @@ public class User {
         this.age = age;
     }
 
-    public User(long id, String name, String lastName, byte age) {
-    }
+
 
     public Long getId() {
         return id;

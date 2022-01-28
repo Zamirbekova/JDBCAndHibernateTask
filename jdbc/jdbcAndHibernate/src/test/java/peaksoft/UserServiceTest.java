@@ -6,11 +6,12 @@ import peaksoft.model.User;
 import peaksoft.service.UserService;
 import peaksoft.service.UserServiceImpl;
 
+
 import java.util.List;
 
 public class UserServiceTest {
 
-    private final UserService userService = new UserServiceImpl();
+UserService userService=new UserServiceImpl();
 
     private final String testName = "Kanat";
     private final String testLastName = "Subanov";
